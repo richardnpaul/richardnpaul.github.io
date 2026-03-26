@@ -1,68 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - Interval Timer</title>
+
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f1f1f;
+      --card: #f5f5f5;
+      --accent: #1a73e8;
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #e0e0e0;
+      --card: #1e1e1e;
+      --accent: #8ab4f8;
+    }
+
     body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
       max-width: 800px;
       margin: auto;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      padding: 20px;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+    }
+
+    h2 {
+      margin-top: 1.8rem;
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin: 0.6rem 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .toggle {
+      cursor: pointer;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--text);
+      font-size: 0.9rem;
+    }
+
+    .toggle:hover {
+      opacity: 0.85;
+    }
+
+    .last-updated {
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
+
 <body>
-<h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> 2026-03-26</p>
+  <div class="container">
+    <div class="top-bar">
+      <div class="last-updated">Last updated: [DATE]</div>
+      <button class="toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
+    </div>
 
-<h2>Introduction</h2>
-<p>This Privacy Policy describes how <strong>Interval Timer</strong> ("the App") handles user data.</p>
+    <div class="card">
+      <h1>Privacy Policy</h1>
 
-<h2>Data Collection by the App</h2>
-<p>The App does <strong>not collect, store, or transmit any personal data</strong>.</p>
-<p>All user preferences and settings are stored <strong>locally on your device only</strong> and are not shared externally.</p>
+      <h2>Introduction</h2>
+      <p>This Privacy Policy describes how <strong>Interval Timer</strong> ("the App") handles user data.</p>
 
-<h2>Advertising</h2>
-<p>The App uses Google AdMob, a third-party advertising service provided by Google.</p>
-<p>AdMob may collect and process data such as:</p>
-<ul>
-  <li>Device identifiers (e.g. Advertising ID)</li>
-  <li>IP address</li>
-  <li>Device and usage information</li>
-  <li>App interactions</li>
-</ul>
-<p>This data is used to provide and improve advertising, including personalised ads where consent has been given.</p>
+      <h2>Data Collection by the App</h2>
+      <p>The App does <strong>not collect, store, or transmit any personal data</strong>.</p>
+      <p>All user preferences and settings are stored <strong>locally on your device only</strong> and are not shared externally.</p>
 
-<h2>User Consent (GDPR / UK GDPR)</h2>
-<p>For users in the UK and EEA, the App uses Google's Transparency and Consent Framework (TCF) to request consent for personalised advertising.</p>
-<p>When you first use the App, you may be asked to choose whether to receive personalised ads.</p>
-<p>You can change or withdraw your consent at any time by:</p>
-<ul>
-  <li>Opening the App</li>
-  <li>Navigating to <strong>Settings</strong></li>
-  <li>Selecting <strong>"Privacy Options"</strong></li>
-</ul>
-<p>Your choices will be respected and applied to future ad requests.</p>
+      <h2>Advertising</h2>
+      <p>The App uses Google AdMob, a third-party advertising service provided by Google.</p>
+      <p>AdMob may collect and process data such as:</p>
+      <ul>
+        <li>Device identifiers (e.g. Advertising ID)</li>
+        <li>IP address</li>
+        <li>Device and usage information</li>
+        <li>App interactions</li>
+      </ul>
+      <p>This data is used to provide and improve advertising, including personalised ads where you have given consent.</p>
+      <p>If you choose not to consent to personalised advertising, non-personalised ads may still be shown.</p>
 
-<h2>Third-Party Privacy Policy</h2>
-<p>For more information on how Google processes data, please see:</p>
-<p><a href="https://policies.google.com/privacy" target="_blank">
-  https://policies.google.com/privacy
-</a></p>
+      <h2>User Consent (GDPR / UK GDPR)</h2>
+      <p>For users in the UK and EEA, the App uses Google's Transparency and Consent Framework (TCF) to request consent for personalised advertising.</p>
+      <p>When you first use the App, you may be asked to choose whether to receive personalised ads.</p>
+      <p>You can change or withdraw your consent at any time by:</p>
+      <ul>
+        <li>Opening the App</li>
+        <li>Navigating to <strong>Settings</strong></li>
+        <li>Selecting <strong>"Privacy Options"</strong></li>
+      </ul>
+      <p>Your choices will be respected and applied to future ad requests.</p>
 
-<h2>Data Sharing</h2>
-<p>The App itself does not share any data. However, third-party services (such as AdMob) may process data as described above.</p>
+      <h2>US State Privacy Rights</h2>
+      <p>For users in California, Virginia, Colorado, Connecticut, and other US states with applicable privacy laws, the App uses Google's consent framework to provide notice and, where required, the ability to opt out of the sale or sharing of personal data (as defined by applicable laws) by AdMob.</p>
+      <p>You can review or change your choices at any time via <strong>Settings → Privacy Options</strong>.</p>
+      <p>For more information on how Google processes data under US state laws, see <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy & Terms</a>.</p>
 
-<h2>Children's Privacy</h2>
-<p>The App is intended for a general audience and is not specifically directed at children under 13. The App does not knowingly collect personal data from children.</p>
+      <h2>Your Rights</h2>
 
-<h2>Changes to This Policy</h2>
-<p>This Privacy Policy may be updated from time to time. Updates will be posted on this page.</p>
+      <p><strong>UK and EEA users (GDPR / UK GDPR)</strong></p>
+      <ul>
+        <li>Access the personal data held about you</li>
+        <li>Correct inaccurate data</li>
+        <li>Request erasure of your data</li>
+        <li>Restrict or object to processing</li>
+        <li>Data portability</li>
+        <li>Withdraw consent at any time (via <strong>Settings → Privacy Options</strong>)</li>
+        <li>Lodge a complaint with your local supervisory authority (UK: <a href="https://ico.org.uk" target="_blank">ICO</a>)</li>
+      </ul>
 
-<h2>Contact</h2>
-<p>If you have any questions, please contact:</p>
-<p><a href="mailto:rnpappdev+interval-timer-policy@gmail.com">rnpappdev+interval-timer-policy@gmail.com</p>
+      <p>Because the App itself does not collect personal data, most of these rights apply to data processed by Google AdMob. To exercise them with Google directly, visit <a href="https://myaccount.google.com/data-and-privacy" target="_blank">Google's privacy controls</a>.</p>
+
+      <p><strong>Legal basis for advertising</strong></p>
+      <p>Where you have given consent (UK/EEA), personalised ads are served on the basis of that consent (GDPR Article 6(1)(a)). Where consent is not given or not required, Google may serve non-personalised ads on the basis of legitimate interest, where permitted by applicable law.</p>
+
+      <h2>Third-Party Privacy Policy</h2>
+      <p>For more information on how Google processes data, please see:</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+      <h2>Data Retention</h2>
+      <p>The App stores no personal data and therefore has no retention period to disclose.</p>
+      <p>Data collected by Google AdMob is retained according to Google's own policies. See <a href="https://policies.google.com/technologies/ads" target="_blank">Google's data retention information</a> for details.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>The App is intended for a general audience and is not specifically directed at children under 13. The App does not knowingly collect personal data from children.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>This Privacy Policy may be updated from time to time. The "Last updated" date at the top of this page will reflect any changes. For significant changes affecting how your data is processed, the App's consent mechanism will request your choices again where required by law.</p>
+
+      <h2>Contact</h2>
+      <p>If you have any questions, please contact:</p>
+      <p>[YOUR EMAIL HERE]</p>
+    </div>
+  </div>
+
+  <script>
+    const toggleTheme = () => {
+      document.body.classList.toggle("dark");
+      localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
+    };
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark") {
+        document.body.classList.add("dark");
+      }
+    })();
+  </script>
 </body>
 </html>
